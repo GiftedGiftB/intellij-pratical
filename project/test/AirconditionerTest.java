@@ -27,24 +27,22 @@ public class AirconditionerTest {
     @Test
     public void airconditionerTemperature_checkThatAirconditionerDecreases(){
         Airconditioner myAirconditioner = new Airconditioner();
-        myAirconditioner.setMyAirconditionerTemperature(16);
-        assertEquals(16, myAirconditioner.getTemperature());
+        myAirconditioner.setMyAirconditionerTemperature(18);
+        assertEquals(18, myAirconditioner.getTemperature());
     }
     @Test
     public void airconditionerTemperature_checkThatTemperatureDoesNotIncreaseBeyond30(){
         Airconditioner myAirconditioner = new Airconditioner();
-        myAirconditioner.setMyAirconditionerTemperature(27);
-        assertEquals(27, myAirconditioner.getTemperature());
+        myAirconditioner.setMyAirconditionerTemperature(18);
+        assertEquals(18, myAirconditioner.getTemperature());
     }
     @Test
-    public void airconditionerTemperature_checkThatTemperatureDoesNotDecreaseBeyond16(){
+    public void airconditionerTemperature_checkThatTemperatureDoesNotDecreaseBeyond30(){
         Airconditioner myAirconditioner = new Airconditioner();
-        myAirconditioner.setMyAirconditionerTemperature(16);
-        assertEquals(16, myAirconditioner.getTemperature());
+        myAirconditioner.setMyAirconditionerTemperature(18);
+        assertEquals(18, myAirconditioner.getTemperature());
     }
 
 
 
 }
-
-
