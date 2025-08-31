@@ -24,6 +24,7 @@ public class Airconditioner {
     }
     public void setMyAirconditionerTemperature(int control) {
        if(control <= 30 && control >= 16){
+
             temperature = control;
             itIsOn = false;
        }
